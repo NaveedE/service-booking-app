@@ -69,9 +69,12 @@ function Login() {
                 <label className="block text-sm font-medium text-slate-700">
                   Password
                 </label>
-                <a href="#" className="text-xs font-semibold text-indigo-600 hover:text-indigo-500">
+                <button
+                  type="button"
+                  className="text-xs font-semibold text-indigo-600 hover:text-indigo-500"
+                >
                   Forgot password?
-                </a>
+                </button>
               </div>
               <input
                 name="password"

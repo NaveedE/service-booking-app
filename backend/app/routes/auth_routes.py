@@ -56,10 +56,9 @@ def signup(
         "role": user.role
     }
 
-    print("OTP:", otp)
-
     return {
-        "message": "OTP sent successfully"
+        "message": "OTP sent successfully",
+        "otp": otp
     }
 
 
@@ -102,7 +101,7 @@ def verify_otp_route(
     db.commit()
 
     return {
-        "message": "Account created successfully"
+        "message": "Account verified successfully"
     }
 
 
